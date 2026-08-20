@@ -1,7 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "doubling_link_list.h"
+#include "doubly_link_list.h"
 
+/* 
+    Inserts a new node with the specified data at the head of the doubly linked list
+ */
 void insert_head(dlink_list **head, dlink_list **tail, int data)
 {
     if ((*head) == NULL)
@@ -24,6 +27,9 @@ void insert_head(dlink_list **head, dlink_list **tail, int data)
     }
 }
 
+/* 
+    Inserts a new node with the specified data at the tail of the doubly linked list
+ */
 void insert_tail(dlink_list **head, dlink_list **tail, int data)
 {
     if ((*head) == NULL)
@@ -46,6 +52,9 @@ void insert_tail(dlink_list **head, dlink_list **tail, int data)
     }
 }
 
+/* 
+    Removes the head node from the list and returns its data
+ */
 int get_and_remove_head(dlink_list **head, dlink_list **tail)
 {
     if ((*head) != NULL)
@@ -73,6 +82,9 @@ int get_and_remove_head(dlink_list **head, dlink_list **tail)
     return 0;
 }
 
+/* 
+    Removes the tail node from the list and returns its data
+ */
 int get_and_remove_tail(dlink_list **head, dlink_list **tail)
 {
     if ((*head) != NULL)
@@ -100,6 +112,9 @@ int get_and_remove_tail(dlink_list **head, dlink_list **tail)
     return 0;
 }
 
+/* 
+    Traverses and prints all elements from head to tail
+ */
 void traverse_head_to_tail(dlink_list *head, dlink_list *tail)
 {
     if (head == NULL)
@@ -116,6 +131,9 @@ void traverse_head_to_tail(dlink_list *head, dlink_list *tail)
     }
 }
 
+/* 
+    Traverses and prints all elements from tail to head
+ */
 void traverse_tail_to_head(dlink_list *head, dlink_list *tail)
 {
     if (head == NULL)

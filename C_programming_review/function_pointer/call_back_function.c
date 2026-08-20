@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+/*
+    This function will call the specific action in other function
+*/
 void action(void (*member)(), int number)
 {
     for (int i = 0; i < number; i++)
@@ -8,11 +11,17 @@ void action(void (*member)(), int number)
     }
 }
 
+/*
+    Specific action 1
+*/
 void dog()
 {
     printf("gau gau\n");
 }
 
+/*
+    Specific action 2
+*/
 void cat()
 {
     printf("meo meo\n");

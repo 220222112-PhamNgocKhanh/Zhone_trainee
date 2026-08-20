@@ -1,4 +1,6 @@
-
+/*
+    Define the structure of singly linklist
+*/
 typedef struct link_list
 {
     int data;

@@ -2,6 +2,9 @@
 #include <stdlib.h>
 #include "singly_link_list.h"
 
+/*
+    Inserts a new node with the specified data at the end of the list
+ */
 void insert_back(link_list **head, int data)
 {
     if ((*head) == NULL)
@@ -27,6 +30,9 @@ void insert_back(link_list **head, int data)
     }
 }
 
+/*
+    Inserts a new node with the specified data at the beginning of the list
+ */
 void insert_front(link_list **head, int data)
 {
     if ((*head) == NULL)
@@ -46,6 +52,9 @@ void insert_front(link_list **head, int data)
     }
 }
 
+/*
+    Deletes the first node found that contains the specified data
+ */
 void delete_first_element(link_list **head, int data)
 {
 
@@ -79,6 +88,9 @@ void delete_first_element(link_list **head, int data)
     }
 }
 
+/*
+    Removes the first node from the list and returns its data
+ */
 int get_and_remove_first_element(link_list **head)
 {
     if ((*head == NULL))
@@ -94,6 +106,9 @@ int get_and_remove_first_element(link_list **head)
     }
 }
 
+/*
+    Deletes all nodes in the list that match the specified data
+ */
 void delete_all_element(link_list **head, int data)
 {
     if (*head == NULL)
@@ -127,6 +142,9 @@ void delete_all_element(link_list **head, int data)
     }
 }
 
+/*
+    Traverses and prints all elements in the linked list
+ */
 void traverse(link_list *head)
 {
     if (head == NULL)
@@ -143,6 +161,9 @@ void traverse(link_list *head)
     }
 }
 
+/*
+    Frees all allocated memory for the entire linked list
+ */
 void free_list(link_list **head)
 {
     while (head != NULL)

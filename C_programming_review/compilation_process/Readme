@@ -1,0 +1,7 @@
+Run `gcc -E main.c -o main.i` and `gcc -E add.c -o add.i` to see the file after completing preprocessing
+
+Run `gcc -S main.i -o main.s` and `gcc -S add.c -o add.s` to see the assembly file after completing compilation
+
+Run `gcc -c main.s -o main.o` and `gcc -c add.s -o add.o` to see the machine code file after completing the process of asembler
+
+Run `gcc  main.o add.o -o exec_main` to see the execute file after completing the linking process

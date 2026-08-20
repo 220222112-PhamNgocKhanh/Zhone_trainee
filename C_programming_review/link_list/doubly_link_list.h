@@ -1,3 +1,6 @@
+/*
+    Define the structure of doubly linklist
+*/
 typedef struct dlink_list
 {
     int data;
