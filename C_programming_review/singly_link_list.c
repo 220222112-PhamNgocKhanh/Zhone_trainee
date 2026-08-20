@@ -2,8 +2,6 @@
 #include <stdlib.h>
 #include "singly_link_list.h"
 
-
-
 void insert_back(link_list **head, int data)
 {
     if ((*head) == NULL)
@@ -85,7 +83,6 @@ int get_and_remove_first_element(link_list **head)
 {
     if ((*head == NULL))
     {
-        
     }
     else
     {

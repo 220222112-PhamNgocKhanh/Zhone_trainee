@@ -5,7 +5,6 @@ typedef struct link_list
     struct link_list *next;
 } link_list;
 
-
 void insert_back(link_list **head, int data);
 void insert_front(link_list **head, int data);
 void delete_first_element(link_list **head, int data);

@@ -5,8 +5,6 @@ typedef struct dlink_list
     struct dlink_list *prev;
 } dlink_list;
 
-
-
 void insert_head(dlink_list **head, dlink_list **tail, int data);
 void insert_tail(dlink_list **head, dlink_list **tail, int data);
 int get_and_remove_head(dlink_list **head, dlink_list **tail);
