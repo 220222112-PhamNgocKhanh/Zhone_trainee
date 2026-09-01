@@ -1,3 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <sys/wait.h>
+#include <fcntl.h>
+#include <sys/prctl.h>
+#include <signal.h>
+#include <sys/mman.h>
+#include <pthread.h>
+#include <sys/resource.h>
+#include <time.h>
+#include <math.h>
+
 #define N 20000000
 
 typedef struct
