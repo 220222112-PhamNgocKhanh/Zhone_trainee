@@ -9,14 +9,10 @@ This lab demonstrates the occurrence of a **race condition** in multithreaded ap
 * **`race_condition.c`**: Demonstrates a classic race condition where two concurrent threads attempt to increment a shared global counter simultaneously without synchronization.
 * **`race_condition_fix.c`**: Implements mutual exclusion (`pthread_mutex_t`) to ensure thread-safe access to the shared resource, guaranteeing a deterministic and correct final output.
 
----
 
-## Getting Started
+## Compilation and Execution
 
-
-### Compilation and Execution
-
-#### 1. Demonstrating the Race Condition
+### 1. Demonstrating the Race Condition
 
 Compile and run the vulnerable program:
 
@@ -27,7 +23,7 @@ gcc -o race_condition race_condition.c
 
 > **Note:** Due to concurrent, uncoordinated writes to the shared variable, the final counter value will often be less than the expected `200000`, varying across executions.
 
-#### 2. Applying the Mutex Fix
+### 2. Applying the Mutex Fix
 
 Compile and run the synchronized program:
 
