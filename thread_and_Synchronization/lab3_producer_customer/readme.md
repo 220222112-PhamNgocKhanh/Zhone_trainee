@@ -1,7 +1,7 @@
-# Lab 3: Producer-Consumer
+# Lab 3: Producer-Consumer with a Bounded Queue
 
-This lab demonstrates the **producer-consumer** program using POSIX threads,
-a mutex, and condition variables. 
+This lab demonstrates the **producer-consumer problem** using POSIX threads,
+a mutex, and condition variables.
 
 ## Idea
 
